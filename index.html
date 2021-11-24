@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+      <title>Knitting Counter</title>
+      <link rel="stylesheet" type="text/css" href="resources/stylesheet.css">
+   </head>   
+  <body>
+    <h1> Knitting Counter </h1>
+    <div class = "contents">
+    <div class="box">
+      <h2>Rows Knit:</h2>
+      <button type="button" id="btnRemRow">-</button>
+      <input type="number" value=0 id="rowValue">
+      <button type="button" id="btnAddRow">+</button>
+      <br><br>
+      <button type="button" id="resetAddRepeat">Repeat</button>
+      <br><br>
+      <button type="button" id="rowReset" class ="reset">Reset</button>
+      <br>
+    </div>
+
+    <div class="box">
+      <h2>
+        Repeats Knit:
+      </h2>
+      <button type="button" id="btnRemRepeat">-</button>
+      <input type=number value=0 id="inputRepeat">
+      <button type="button"  id="btnAddRepeat">+</button>
+      <br><br>
+      <button type="button" id="repeatReset" class ="reset">Reset</button>
+      <br>
+    </div>
+
+    <div class="endBox">
+      <button type="button" id="resetAll" class ="reset">
+        Reset All
+      </button>
+    </div>
+  </div>
+  
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>
